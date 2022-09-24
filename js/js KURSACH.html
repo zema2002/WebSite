@@ -1,0 +1,43 @@
+<HTML>
+
+    <HEAD>
+  
+     <TITLE> Лабораторная работа 15</TITLE>
+  
+     <form name="form">
+        <p><b>Введите текст</b></p>
+        <textarea rows="30" cols="45" name="text"></textarea>
+        <input type="text" name="texto" id="texto">
+        <input type="button" id="clear" value="Очистить" onclick="clean()">
+
+        
+       
+            <input type="button" id="texty" value="Посчитать" onclick="countWord()">
+           <p>Количество слов в тексте <input type="text" name="textoy" id="rez"></p>
+      </form>
+
+
+     <SCRIPT>
+         function clean(){
+            text.value="";
+            location.reload(true);}
+        function countWord(source,word) {
+        var source=document.form.text.value;
+         var word=document.form.texto.value;
+         var el = document.getElementById('rez');
+    if(!word)
+    rez.value=0;
+    var res = 0, index = 0;
+    while((index = source.indexOf(word)) >= 0) {
+        source = source.substring(index + word.length);  
+        res++;}
+    rez.value=res;}
+       </SCRIPT>
+  
+    </HEAD>
+  
+    <BODY>
+  
+   </BODY>
+  
+  </HTML>

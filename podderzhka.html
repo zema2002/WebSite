@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+<header class="page-header">
+    <nav class="menu">
+        <div class="menu__container">
+            <a href="index.html" class="page-logo">
+            <img src="images/logo2.svg" alt="">
+        </a>
+        <ul class="menu__list">
+          
+          <li class="menu__list-item">
+            <a class="menu__list-link menu__list-link" href="sezon-1.html">1 сезон</a>
+            </li>
+        
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="sezon-2.html">2 сезон</a>
+          </li>
+          
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="sezon-3.html">3 сезон</a>
+        </li>
+        
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="sezon-4.html">4 сезон</a>
+        </li>
+        
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="sezon-5.html">5 сезон</a>
+        </li>
+        
+        <li class="menu__list-item">
+          <a class="menu__list-link" href="sezon-6.html">6 сезон</a>
+        </li>
+
+        <li class="menu__list-item">
+            <a class="menu__list-link menu__list-link--active" href="podderzhka.html">Поддержка</a>
+            </li>
+        
+        
+        </ul>
+        </div>
+
+        
+          </nav>
+          
+</header>
+
+<section class="seasons section-page">
+  
+     <h3 class="title">
+      <div class="logo__pod">
+    <img src="images/1.png" class="logo__img" alt="Логотип">
+  </div>
+  
+
+</section>
+  
+  
+    
+  
+	  
+
+
+ 
+  
+  
+ 
+    
+<div class="form__container">
+    <form class="decor" action="zapros.php"  method="post" name="decor">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="form-inner">
+        <h3>Написать нам</h3>
+        <input type="text" name="name" value="" placeholder="Имя" required >
+        <input type="text" name="lastname" value="" placeholder="Фамилия" required >
+        <p><u><b>Ваш любимый сезон:</b></u></p>
+
+       <label class="rad"><input type="radio" name="browser" id="Var1" value="1" required ><img src="images_podderzhka/sezon1.jpg" height="100px" width="130px"></label>
+         <label class="rad" > <input type="radio" name="browser" id="Var2" value="2"><img src="images_podderzhka/sezon2.jpg" height="100px" width="130px"></label>
+           <label class="rad"><input type="radio" name="browser" id="Var3" value="3"><img src="images_podderzhka/sezon3.jpg" height="100px" width="130px"></label> 
+           <label class="rad" > <input type="radio" name="browser" id="Var4" value="4"><img src="images_podderzhka/sezon4.jpg" height="100px" width="130px"></label> 
+           <label class="rad"><input type="radio" name="browser" id="Var4" value="5"><img src="images_podderzhka/sezon5.jpg" height="100px" width="130px"></label>
+           <label class="rad"><input type="radio" name="browser" id="Var5" value="6"><img src="images_podderzhka/dislike5.jpg" height="100px" width="130px"></label>
+        <p><u><b>Любимый актер:</b></u></p>
+        <select name="actor" size="1" >
+            <option value="1" >Густаф Скарсгард /Floki</option>
+            <option value="2">Кэтрин Уинник/Lagertha</option>
+            <option value="3">Александр Людвиг/Bjorn Lothbrok</option>
+            <option value="4">Трэвис Фиммел/Ragnar Lothbrok</option>
+            <option value="5">Клайв Стэнден/Rollo</option>
+            <option value="6">Джорджия Херст /Torvi</option>
+            <option value="7">Алекс Хег Андерсен/Ivar</option>
+            </select>
+            
+            <br><p><u><b>Ждете новый сезон?:</b></u></p><br>
+            Да<input type="radio" name="quest" id="Yes" value="1" required>
+            Нет<input type="radio" name="quest" id="No" value="2">
+
+        <textarea placeholder="Сообщение..." rows="3" name="comment"></textarea>
+        <input type="text" name="texto" id="texto" placeholder="Слово для подсчета...">
+        <input type="button" id="texty" value="Посчитать" onclick="countWord()">
+        <p>Количество слов в сообщении <input type="text" name="textoy" id="rez"></p>
+        <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить">
+      </div>
+    </form>
+    <SCRIPT>
+      
+     function countWord(source,word) {
+     var source=document.decor.comment.value;
+      var word=document.decor.texto.value;
+      var el = document.getElementById('rez');
+ if(!word)
+ rez.value=0;
+ var res = 0, index = 0;
+ while((index = source.indexOf(word)) >= 0) {
+     source = source.substring(index + word.length);  
+     res++;}
+ rez.value=res;}
+    </SCRIPT>
+
+  </div>
+    <div class="left__side">
+      <img src="images_podderzhka/mech2.png" >
+    </div>
+
+    <div class="right__side">
+      <img src="images_podderzhka/mech2.png" >
+    </div>
+	
+	
+   
+	<footer class="footer">
+  <div class="container">
+  <p class="copy">Сайт сделан студентом ОНМУ 2курса Компьютерных наук.Группы КН21.Земляр Игорь</p>
+</div>
+</footer>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

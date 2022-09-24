@@ -1,0 +1,506 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0E0E0E;
+    color:#ffffff;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 21px;
+    font-size: 18px;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+
+.header{
+background-image: url('../images/2.jpg');
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center 50px;
+text-align: center;
+position: relative;
+}
+.header::after{
+content: '';
+position: absolute;
+height: 70px;
+bottom: 0;
+left: 0;
+width: 100%;
+background: linear-gradient(180deg, #0E0E0E 0%, rgba(17, 17, 17, 0.850295) 16.53%, rgba(32, 31, 33, 0) 100%);
+transform: rotate(180deg);
+
+
+}
+
+.container{
+max-width: 1220px;
+padding: 0 10px;
+margin: 0 auto;
+}
+.menu{
+    
+    padding: 50px 0 58px ;
+background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%);
+
+}
+
+.menu__list{
+display: flex;
+justify-content: center;
+
+
+
+}
+
+.menu__list-item{
+font-size: 36px;
+padding: 0 13px;
+
+}
+.menu__list-link:hover,
+.menu__list-link--active{
+color: #85CCDC;
+text-decoration: underline;
+
+}
+.logo{
+
+    padding-top: 178px;
+}
+.title{
+text-align: center;
+margin-bottom: 100px;
+font-size: 36px;
+line-height: 42px;
+font-weight: 400;
+
+}
+.section-page{
+    padding: 100px 0;
+}
+.about__inner{
+
+    display: flex;
+}
+.about__info{
+width: 375px;
+margin-right: 50px;
+flex: none;
+
+}
+.about__info-item{
+    margin-bottom: 25px;
+   color: #E5E5E5;
+}
+
+
+.about__info-item span{
+    display: block;
+}
+
+.about__text p{
+margin-bottom: 25px;
+
+}
+.video{
+    background-image: url('../images/video-bgh.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+     text-align: right;
+}
+.video__text{
+
+   
+color: #85CCDC;
+font-style: italic;
+font-weight: 300;
+font-size: 72px;
+line-height: 84px;
+padding-top: 444px;
+margin-bottom: 40px;
+
+}
+.video__text span{
+padding-right: 285px; 
+    display: block;
+}
+.video__btn{
+   padding-left: 112px;
+   position: relative;
+   margin-right: 230px;
+   top:-40px;
+    
+}
+.video__btn::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top:-40px;
+    background-image: url('../images/lg.svg');
+}
+
+.seasons__inner{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 100px 75px;
+counter-reset: number;
+padding-top: 50px;
+}
+.seasons__item{
+width: 350px;
+height: 250px;
+
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+list-style: none;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}.seasons__item:hover .seasons__link{
+    opacity: 1;
+}
+
+
+.seasons__item::before{
+content: '0' counter(number);
+counter-increment: number;
+position: absolute;
+font-weight: bold;
+font-size: 96px;
+line-height: 112px;
+color: #600e09;
+left: 0;
+top: -72px;
+z-index: -1;
+}
+.seasons__item:hover::after{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(14,14,14,0.8);
+}
+
+.seasons__link{
+    font-size: 36px;
+    line-height: 42px;
+    padding: 12px 78px 11px;
+    background-color: #0e0e0e;
+opacity: 0;
+transition:all .3s;
+z-index: 2;
+}
+
+.heroes__inner
+{
+display: flex;
+justify-content: space-between;
+
+
+}
+
+.heroes__slider-img{
+
+    max-width: 775px;
+
+}
+
+.heroes__slider-text{
+    max-width: 350px;
+
+}
+
+.heroes__name{
+font-family: Roboto Condensed;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 84px;
+    
+    color: #85CCDC;
+    margin-bottom: 44px;
+
+}
+
+.slick-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    z-index: 5;
+    cursor: pointer;
+    outline: none;
+
+}
+.slick-prev{
+left: 38px;
+}
+
+.slick-next{
+
+right: 38px;
+}
+
+.heroes__text p{
+    
+margin-bottom: 15px;
+}
+.copy{
+padding: 14px 0 15px;
+text-align: center;
+
+}
+
+/*season-1*/
+ 
+.page-header{
+
+    background-image: url('../images/header2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+.menu__container{
+    max-width: 1385px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.page-logo{
+    position: absolute;
+    left: 0;
+}
+
+.season-info{
+    position: absolute;
+    max-width: 1385px;
+    display: flex;
+    padding:44px 47px 64px 35px;
+    background-color: #0E0E0E;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.season-info__num{
+font-weight: bold;
+line-height: 56px;
+font-size: 96px;
+margin-right: 51px;
+text-align: center;
+
+
+}
+.season-info__num span{
+    display: block;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.season-info__text p{
+margin-bottom: 15px;
+
+
+}
+
+.season-info__text__noavailible p{
+margin-left: 270px;
+font-size: 30px;
+font-style: italic;
+font-weight: bold;
+
+}
+
+
+/* end season-1*/
+.pic img{
+
+    margin-left: 500px;
+    margin-top: -300px;
+    width: 550px;
+    height: 400px;
+}
+
+/* .fieldset__color{
+    width:300px;	height: 400px; 
+    background:#0e0e0e; 
+    outline: 2px solid #600e09; 
+    border: 3px solid #600e09; 
+    border-radius: 5px; 
+} */
+
+
+.decor {
+  position: relative;
+  max-width: 400px;
+  margin: 50px auto 0;
+  display: block;
+  background:#600e09;
+  border-radius: 23px;
+  margin-top: -120px;
+}
+.form-left-decoration,
+.form-right-decoration {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: rgb(102, 100, 100);
+  border-radius: 20px;
+}
+.form-left-decoration {
+  bottom: 60px;
+  left: -30px;
+}
+.form-right-decoration {
+  top: 60px;
+  right: -30px;
+}
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: rgb(156, 151, 151);
+}
+.form-left-decoration:before {top: -20px;}
+.form-left-decoration:after {
+  top: 20px;
+  left: 10px;
+}
+.form-right-decoration:before {
+  top: -20px;
+  right: 0;
+}
+.form-right-decoration:after {
+  top: 20px;
+  right: 10px;
+}
+.circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+.form-inner {padding: 50px;}
+.form-inner input,
+.form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background: #E9EFF6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.form-inner input[type="submit"] {
+  margin-top: 30px;
+  background: rgb(49, 45, 45);
+  border-bottom: 4px solid rgb(43, 40, 43);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-inner input[type="reset"] {
+  margin-top: 30px;
+  background: rgb(49, 45, 45);
+  border-bottom: 4px solid rgb(43, 40, 43);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-inner input[type="button"] {
+  margin-top: 30px;
+  background: rgb(49, 45, 45);
+  border-bottom: 4px solid rgb(43, 40, 43);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.form-inner h3 {
+  margin-bottom:12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #707981;
+}
+
+.rad > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+  }
+  .rad > input + img{ /* IMAGE STYLES  Разместите изображение рядом с hidden radio, используя селектор Adjacent sibling selector+*/
+    cursor:pointer;
+    border:2px solid transparent;
+  }
+  .rad> input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+    border:2px solid #f00;
+  } 
+
+  .logo__pod{
+
+    margin-top: -80px;
+  }
+
+  .left__side{
+    display: flex;
+  }
+  .right__side{
+    display: flex;
+  }
+
+  .form__container{
+    display: flex;
+  }
+
+  .left__side img{
+    margin-top: -1150px;
+  }
+
+  .right__side img{
+    margin-top: -1150px;
+    margin-left:1010px ;
+  }
+
+  
+
+
+  
